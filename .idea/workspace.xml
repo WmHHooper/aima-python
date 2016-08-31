@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c0d5b11-9838-459c-818c-2b175619ce26" name="Default" comment="My homework submission #1">
+    <list default="true" id="7c0d5b11-9838-459c-818c-2b175619ce26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aima-python.iws" />
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/submissions/Conklin/vaccuum.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding>
                 <element signature="e#22#42#0" expanded="true" />
               </folding>
@@ -521,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472622679548</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="My homework submission #1">
+      <created>1472624037278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1472624037278</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -754,7 +761,7 @@
     <entry file="file://$PROJECT_DIR$/submissions/Conklin/vaccuum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
             <element signature="e#22#42#0" expanded="true" />
           </folding>
