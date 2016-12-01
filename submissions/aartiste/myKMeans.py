@@ -84,7 +84,6 @@ trumpECHP.feature_names.remove('Trump')
 '''
 Build the target list,
 one entry for each row in the input frame.
-
 The Naive Bayesian network is a classifier,
 i.e. it sorts data points into bins.
 The best it can do to estimate a continuous variable
