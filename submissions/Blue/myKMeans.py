@@ -1,5 +1,4 @@
-from sklearn import datasets
-from sklearn.neural_network import MLPClassifier
+from sklearn.cluster import KMeans
 import traceback
 from submissions.Blue import music
 
@@ -13,6 +12,7 @@ class DataFrame:
 musicATRB = DataFrame()
 musicATRB.data = []
 targetData = []
+
 '''
 Extract data from the CORGIS Music Library.
 
@@ -27,8 +27,9 @@ for song in allSongs:
 
         genre = song['artist']['terms'] #String
         title = song['song']['title'] #String
-        # release = float(song['song']['Release'])
-
+        length = float(song['song']['duration'])
+        year = float(song['song']['year'])
+        catchy = float(song['song']['familiarity'])
         musicATRB.data.append([genre, title])
 
     except:
@@ -37,17 +38,18 @@ for song in allSongs:
 musicATRB.feature_names = [
     'Genre',
     'Title',
-    'Release',
+    'Year',
     'Length',
+    'Familiarity'
 ]
 
 musicATRB.target = []
 
-def musicTarget(release):
-    if (length <= 210
-        ): #if the song is less that 3.5 minutes (210 seconds) long
+def musicTarget(length):
+    if (length <= 210 and ("pop" in genre) ): #if the song is less that 3.5 minutes (210 seconds) long and if has 'pop' its description
         return 1
     return 0
+
 
 for i in targetData:
     tt = musicTarget(i)
@@ -63,35 +65,10 @@ Examples = {
 }
 
 '''
-Make a customn classifier,
-'''
-mlpc = MLPClassifier(
-    hidden_layer_sizes = (5000,),
-    activation = 'relu',
-    solver='sgd', # 'adam',
-    # alpha = 0.0001,
-    # batch_size='auto',
-    learning_rate = 'adaptive', # 'constant',
-    # power_t = 0.5,
-    max_iter = 1000, # 200,
-    shuffle = False,
-    # random_state = None,
-    # tol = 1e-4,
-    # verbose = False,
-    # warm_start = False,
-    momentum = 0.4,
-    # nesterovs_momentum = True,
-    # early_stopping = False,
-    # validation_fraction = 0.1,
-    # beta_1 = 0.9,
-    beta_2 = 0.999,
-    # epsilon = 1e-8,
-)
-
-'''
 Try scaling the data.
 '''
 musicScaled = DataFrame()
+
 
 def setupScales(grid):
     global min, max
@@ -120,23 +97,92 @@ def scaleGrid(grid):
         newGrid.append(newRow)
     return newGrid
 
+
 setupScales(musicATRB.data)
 musicScaled.data = scaleGrid(musicATRB.data)
 musicScaled.feature_names = musicATRB.feature_names
 musicScaled.target = musicATRB.target
 musicScaled.target_names = musicATRB.target_names
+catchy.data = musicATRB.data
+catchy.feature_names = musicATRB.feature_names
 
 
+catchy.target = []
+
+catchy.target_names = [
+    'Catchy'
+    'Not Catchy'
+]
+
+
+def catchyTarget(catchy):
+    if (catchy >= 0.5):
+        return 1
+    return 0
+
+for i in targetData:
+    tt = musicTarget(i)
+    catchy.target.append(tt)
+
+
+catchyScaled = DataFrame()
+setupScales(catchy.data)
+catchyScaled.data = scaleGrid(catchy.data)
+catchyScaled.feature_names = catchy.feature_names
+catchyScaled.target = catchy.target
+catchyScaled.target_names = catchy.target_names
+
+
+'''
+Make a custom classifier,
+'''
+km = KMeans(
+    n_clusters=2,
+    max_iter=300,
+    # n_init=10,
+    init='k-means++',
+    algorithm='auto',
+    # precompute_distances='auto',
+    # tol=1e-4,
+    n_jobs=-1,
+    # random_state=numpy.RandomState,
+    verbose=0,
+    # copy_x=True,
+)
+
+km_1 = KMeans(
+    n_clusters=4,
+    max_iter=500,
+    # n_init=10,
+    # init='k-means++',
+    algorithm='full',
+    # precompute_distances='auto',
+    # tol=1e-4,
+    # n_jobs=-1,
+    # random_state=numpy.RandomState,
+    verbose=1,
+    # copy_x=True,
+)
 
 Examples = {
     'musicDefault': {
         'frame': musicATRB,
     },
-    'MusicSGD': {
-        'frame': musicATRB,
-        'mlpc': mlpc
-    },
+
     'MusicScaled': {
         'frame': musicScaled,
+        'kmeans' : km
+    },
+    'CatchyScaled': {
+        'frame': catchyScaled,
+        'kmeans': km
+    },
+'MusicScaled': {
+        'frame': musicScaled,
+        'kmeans' : km_1
+    },
+    'CatchyScaled': {
+        'frame': catchyScaled,
+        'kmeans': km_1
     },
 }
