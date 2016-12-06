@@ -98,20 +98,20 @@ musicScaled.target = musicECHP.target
 musicScaled.target_names = musicECHP.target_names
 
 '''
-Make a customn classifier,
+Make a custom classifier,
 '''
 km = KMeans(
-    n_clusters=2,
-    # max_iter=300,
-    # n_init=10,
-    # init='k-means++',
-    # algorithm='auto',
-    # precompute_distances='auto',
-    # tol=1e-4,
-    # n_jobs=-1,
-    # random_state=numpy.RandomState,
-    # verbose=0,
-    # copy_x=True,
+    n_clusters=8,
+    max_iter=500,
+    n_init=10,
+    init='k-means++',
+    algorithm='auto',
+    precompute_distances='auto',
+    tol=1e-4,
+    n_jobs=-1,
+    #random_state=numpy.RandomState,
+    verbose=0,
+    copy_x=True,
 )
 
 Examples = {
