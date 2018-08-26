@@ -74,14 +74,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="250" />
-          <entry key="txt" value="147" />
+          <entry key="py" value="251" />
+          <entry key="txt" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="147" />
-          <entry key="Python" value="250" />
+          <entry key="PLAIN_TEXT" value="149" />
+          <entry key="Python" value="251" />
         </counts>
       </usages-collector>
     </session>
@@ -91,20 +91,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/submissions/Gutierrez/vacuum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+            <state relative-caret-position="287">
+              <caret line="203" column="47" selection-start-line="203" selection-start-column="47" selection-end-line="203" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/submissions/aardvark/vaccuum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="200" column="4" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
+            <state relative-caret-position="-1073">
+              <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -145,8 +145,8 @@
         <option value="$PROJECT_DIR$/submissions/Johnson/MyLego.py" />
         <option value="$PROJECT_DIR$/submissions/aardvark/vacuum2Runner.py" />
         <option value="$PROJECT_DIR$/envgui.py" />
-        <option value="$PROJECT_DIR$/submissions/aardvark/vaccuum.py" />
         <option value="$PROJECT_DIR$/submissions/Gutierrez/vacuum.py" />
+        <option value="$PROJECT_DIR$/submissions/aardvark/vaccuum.py" />
       </list>
     </option>
   </component>
@@ -184,22 +184,11 @@
               <item name="aima-python" type="b2602c69:ProjectViewProjectNode" />
               <item name="aima-python" type="462c0819:PsiDirectoryNode" />
               <item name="submissions" type="462c0819:PsiDirectoryNode" />
-              <item name="aardvark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aima-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aima-python" type="462c0819:PsiDirectoryNode" />
-              <item name="submissions" type="462c0819:PsiDirectoryNode" />
               <item name="Gutierrez" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aima-python" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="aima-python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -663,7 +652,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535324870521</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added picture for assignment number 1 changed walls to grass vacuum to shovel and dirt to different dirt">
+      <created>1535325169900</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535325169900</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added picture for assignment number 1 changed walls to grass vacuum to shovel and dirt to different dirt">
+      <created>1535325197907</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1535325197907</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -697,14 +700,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="180" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25496426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25496426" />
       <window_info id="Structure" order="1" weight="0.2494043" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49722" visible="true" weight="0.32649842" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49722" visible="true" weight="0.32649842" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988086" weight="0.39905363" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -903,17 +905,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submissions/aardvark/vaccuum.py">
+    <entry file="file://$PROJECT_DIR$/submissions/Gutierrez/vacuum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="200" column="4" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
+        <state relative-caret-position="287">
+          <caret line="203" column="47" selection-start-line="203" selection-start-column="47" selection-end-line="203" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submissions/Gutierrez/vacuum.py">
+    <entry file="file://$PROJECT_DIR$/submissions/aardvark/vaccuum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+        <state relative-caret-position="-1073">
+          <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
         </state>
       </provider>
     </entry>
