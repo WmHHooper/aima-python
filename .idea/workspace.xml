@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d67f96f-2a7a-4cd2-bfd8-c4b9ffac1c4c" name="Default" comment="Updated settings">
-      <change beforePath="$PROJECT_DIR$/.idea/aima-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aima-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/games.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submissions/Gutierrez/vacuum.py" beforeDir="false" afterPath="$PROJECT_DIR$/submissions/Gutierrez/vacuum.py" afterDir="false" />
-    </list>
+    <list default="true" id="3d67f96f-2a7a-4cd2-bfd8-c4b9ffac1c4c" name="Default" comment="added picture for assignment number 1 changed walls to grass vacuum to shovel and dirt to different dirt" />
     <ignored path="aima-python.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -81,12 +75,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="250" />
-          <entry key="txt" value="26" />
+          <entry key="txt" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="PLAIN_TEXT" value="147" />
           <entry key="Python" value="250" />
         </counts>
       </usages-collector>
@@ -662,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535053738770</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added picture for assignment number 1 changed walls to grass vacuum to shovel and dirt to different dirt">
+      <created>1535324870521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1535324870521</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -738,7 +739,8 @@
     <MESSAGE value="Removed stale submissions" />
     <MESSAGE value="Updated settings" />
     <MESSAGE value="First homework, first try" />
-    <option name="LAST_COMMIT_MESSAGE" value="First homework, first try" />
+    <MESSAGE value="added picture for assignment number 1 changed walls to grass vacuum to shovel and dirt to different dirt" />
+    <option name="LAST_COMMIT_MESSAGE" value="added picture for assignment number 1 changed walls to grass vacuum to shovel and dirt to different dirt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
