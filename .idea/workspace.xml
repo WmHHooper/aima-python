@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d67f96f-2a7a-4cd2-bfd8-c4b9ffac1c4c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/submissions/Deas/vacuum2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grading/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/grading/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submissions/Deas/vaccuum.py" beforeDir="false" afterPath="$PROJECT_DIR$/submissions/Deas/vaccuum.py" afterDir="false" />
-    </list>
+    <list default="true" id="3d67f96f-2a7a-4cd2-bfd8-c4b9ffac1c4c" name="Default" comment="Homework 2 attempt 1" />
     <ignored path="aima-python.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -81,12 +74,12 @@
         <counts>
           <entry key="gitignore" value="6" />
           <entry key="py" value="1310" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="32" />
           <entry key="Python" value="1310" />
         </counts>
       </usages-collector>
@@ -121,7 +114,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/submissions/Deas/vacuum2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-166">
+            <state relative-caret-position="147">
               <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
@@ -670,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481564974126</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Homework 2 attempt 1">
+      <created>1536198801974</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536198801977</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -704,7 +704,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25581396" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -771,7 +770,8 @@
     <MESSAGE value="Finished Lego Project in ev3" />
     <MESSAGE value="Removed stale submissions" />
     <MESSAGE value="Updated settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated settings" />
+    <MESSAGE value="Homework 2 attempt 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework 2 attempt 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,7 +931,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/submissions/Deas/vacuum2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
+        <state relative-caret-position="147">
           <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
