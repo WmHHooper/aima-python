@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d67f96f-2a7a-4cd2-bfd8-c4b9ffac1c4c" name="Default" comment="Updated settings" />
+    <list default="true" id="3d67f96f-2a7a-4cd2-bfd8-c4b9ffac1c4c" name="Default" comment="Updated settings">
+      <change beforePath="$PROJECT_DIR$/ATT63381.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ATT63381.gitignore" afterDir="false" />
+    </list>
     <ignored path="aima-python.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -661,7 +663,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536208917947</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated settings">
+      <created>1536209244297</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536209244297</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated settings">
+      <created>1536209254261</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536209254261</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -695,7 +711,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25965664" />
       <window_info id="Structure" order="1" weight="0.25" />
