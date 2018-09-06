@@ -102,12 +102,12 @@ def HW2Agent() -> object:
     program.bumpright = False
     program.bumpup = False
     program.bumpdown = False
-    program.useLnumber = False
-    program.useRnumber = False
-    program.useUnumber = False
-    program.useDnumber = False
+    #program.useLnumber = False
+    #program.useRnumber = False
+    #program.useUnumber = False
+    #program.useDnumber = False
     program.length = 0
-    program.lengthTemp = 100
+    #program.lengthTemp = 100
     program.width = 0
     program.widthTemp = 100
 
