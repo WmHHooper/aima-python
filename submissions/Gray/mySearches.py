@@ -2,17 +2,31 @@ import search
 from math import(cos, pi)
 
 # A sample map problem
-sumner_map = search.UndirectedGraph(dict(
-   Portland=dict(Mitchellville=7, Fairfield=17, Cottontown=18),
-   Cottontown=dict(Portland=18),
-   Fairfield=dict(Mitchellville=21, Portland=17),
-   Mitchellville=dict(Portland=7, Fairfield=21),
+# sumner_map = search.UndirectedGraph(dict(
+#    Portland=dict(Mitchellville=7, Fairfield=17, Cottontown=18),
+#    Cottontown=dict(Portland=18),
+#    Fairfield=dict(Mitchellville=21, Portland=17),
+#    Mitchellville=dict(Portland=7, Fairfield=21),
+# ))
+
+gray_map = search.UndirectedGraph(dict(
+   Boston=dict(Cambridge=14, Brookline=21, Chelsea=13, Arlington=3),
+   Chelsea=dict(Boston=13, Winthrop=13, Somerville=16, Arlington=8),
+   Winthrop=dict(Chelsea=13),
+   Somerville=dict(Chelsea=16, Cambridge=10, Medford=5, Arlington=6),
+   Cambridge=dict(Boston=14, Brookline=21, Watertown=16, Belmont=15,
+                  Medford=15, Somerville=10, Arlington=10),
+   Medford=dict(Cambridge=15, Belmont=5, Somerville=5),
+   Brookline=dict(Boston=21, Cambridge=21, Watertown=20),
+   Watertown=dict(Belmont=7, Cambridge=16, Brookline=20),
+   Belmont=dict(Watertown=7, Cambridge=15, Medford=5),
+   Arlington=dict(Somerville=6, Cambridge=10, Boston=3, Chelsea=8)
 ))
 
-sumner_puzzle = search.GraphProblem('Cottontown', 'Mitchellville', sumner_map)
+gray_puzzle = search.GraphProblem('Belmont', 'Chelsea', gray_map)
 
-sumner_puzzle.label = 'Sumner'
-sumner_puzzle.description = '''
+gray_puzzle.label = 'Boston'
+gray_puzzle.description = '''
 An abbreviated map of Sumner County, TN.
 This map is unique, to the best of my knowledge.
 '''
@@ -68,7 +82,7 @@ switch_puzzle.label = 'Light Switch'
 
 mySearches = [
  #   swiss_puzzle,
-    sumner_puzzle,
+    gray_puzzle,
     romania_puzzle,
     switch_puzzle,
 ]
