@@ -80,4 +80,3 @@ def print_table(table, header=[], leftColumn=[], topLeft=[],
     for row in pTable:
         print(sep.join(getattr(
             str(x), j)(size) for (j, size, x) in zip(justs, sizes, row)))
-            
