@@ -348,6 +348,46 @@ myWeights = [
 # np.set_printoptions(precision=1)
 # print('prediction =', predict3)
 
+
+
+import keras
+from keras.datasets import boston_housing
+from keras.layers import Activation
+
+(x_train, y_train), (x_test, y_test) = boston_housing.load_data()
+
+model= keras.Sequential()
+model.add(keras.layers.Conv2D(input_shape=(x_train.shape[1],x_train.shape[2],x_train.shape[3]),
+                              filters=64,kernel_size=(5,5),strides=(1,1),activation='relu',padding='same'))
+ #model.add(keras.layers.Dropout(.5))
+model.add(keras.layers.Conv2D(filters=64,kernel_size=(5,5),strides=(2,2),activation='relu'))
+model.add(keras.layers.Dropout(.2))
+#model.add(keras.layers.Conv2D(filters=64,kernel_size=(5,5),strides=(2,2),activation='relu',padding='same'))
+model.add(keras.layers.Conv2D(filters=64,kernel_size=(5,5),strides=(2,2),activation='relu'))
+model.add(keras.layers.MaxPooling2D(pool_size=(2,2),strides=(2,2)))
+model.add(keras.layers.Dropout(.2))
+model.add(keras.layers.Flatten())
+model.add(keras.layers.Dense(512,activation='relu'))
+#model.add(keras.layers.Dropout(.5))
+#model.add(keras.layers.Dense(1000,activation='tanh'))
+model.add(keras.layers.Dense(10))
+model.add(Activation('softmax'))
+
+model.fit(x_train, y_train,
+          batch_size=32,
+          epochs=100,
+          verbose=1,
+          validation_data=(x_test, y_test),
+          )
+
+predict3 = model.predict(x_test)
+np.set_printoptions(suppress=True)
+np.set_printoptions(precision=1)
+print('prediction =', predict3)
+
 Examples = {
     'count3' : [ bin7, count3, model, myWeights ],
+    'boston_housing' : [ x_test, y_test, model, model.get_weights() ]
 }
+
+
